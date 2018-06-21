@@ -1,0 +1,27 @@
+main {
+	background-image: url(https://cdn.lyft.com/pagelauncherdatastore/customers_hero@2x.8f66ab8f.png);
+	background-position: right;
+	background-size: cover;
+	height: 100vh;
+}
+
+
+main div.row > a {
+	background-color: rgba(136, 14, 79,.3);
+	/*background-color: rgba(0,0,0,0);*/
+	margin-top: 15rem;
+	border: 2px solid #F10792;
+
+}
+
+.pink-logo {
+	margin-top: 6rem;
+}
+
+.log-in {
+	margin-right: .3rem;
+}
+
+.sing-up {
+	margin-left: .3rem;
+}
