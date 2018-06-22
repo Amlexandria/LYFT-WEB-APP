@@ -14,7 +14,7 @@ if (theCode === codeValue){
 	};
 };
 
-console.log(codeValue);
+
 
 function randomCode () {
 
@@ -30,6 +30,12 @@ function randomCode () {
 	});
 };
 
+function weAreDoneAlert () {
+	swal("We have finished", "you have successfully completed your registration!" , "success")
+}
+
+
+
 $(document).ready(function() {
     $('input#the-code').characterCounter();
     $('#the-code').keyup(randomCodeValidation);
@@ -37,6 +43,7 @@ $(document).ready(function() {
     $('.modal').modal();
     $('.checkbox').click(function(){
 	$('#btn-next3').removeClass('disabled');
+	$('#btn-next3').click(weAreDoneAlert);
 
     })
   });

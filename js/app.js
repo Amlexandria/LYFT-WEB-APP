@@ -1,11 +1,3 @@
-// MODAL
-$(document).ready(function(){
-    $('.modal').modal();
-  });
-
-$(document).ready(function() {
-    $('input#phone-number').characterCounter();
-  });
 
 // -------------VALIDACIONES SING UP------------------
 
@@ -57,7 +49,9 @@ function randomCode () {
 
 
  $(document).ready(function(){
+ 	$('.modal').modal();
     $('select').formSelect();
+    $('input#phone-number').characterCounter();
     $('#phone-number').keyup(digitCounter);
     $('#btn-next').click(randomCode);
 
