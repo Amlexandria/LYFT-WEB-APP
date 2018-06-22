@@ -11,8 +11,25 @@ main {
 
 .container-sing-up {
 	background-color: white;
+  padding: 10px;
+  margin-top: 2rem;
 }
 
+#container-verify {
+  height: 80vh;
+  padding: 2rem;
+}
+/*div#container-verify .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2rem;
+    min-height: 1px;
+}*/
+
+.verify p{
+  margin-top: 2rem;
+}
 
 /*.dropdown-content li {
     clear: both;

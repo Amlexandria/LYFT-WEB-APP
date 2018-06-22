@@ -19,6 +19,8 @@ function digitCounter () {
 		// se active el botón "Next"
 		$('#btn-next').removeClass('disabled');
 	}
+
+
 };
 
 // ------------GENERACIÓN DE CÓDIGO ALEATORIO-----------
@@ -35,8 +37,11 @@ function randomCode () {
 	}
 	// se genera el alert con el codígo aleatorio
 	swal("We have created a code for you!", "Your code: LAB-" + code, "success");
-	
+
+
+	// se reemplaza el botón por defecto del alert por un enlace que redirecciona al singup.html
 	$('.swal-button').replaceWith("<a class='nuevo btn' href='singup.html'>ok</a>");
+	window.location.href="singup.html?code="+ code;
 
 	// $('swal-button').click(function(){
 	// 	var butonAlertCode = $('swal-button').attr('href', 'singup.html');
@@ -53,7 +58,7 @@ function randomCode () {
 
  $(document).ready(function(){
     $('select').formSelect();
-    $('#phone-number').mousemove(digitCounter);
+    $('#phone-number').keyup(digitCounter);
     $('#btn-next').click(randomCode);
 
 
