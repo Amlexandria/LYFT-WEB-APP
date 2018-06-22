@@ -16,9 +16,22 @@ if (theCode === codeValue){
 
 console.log(codeValue);
 
+function randomCode () {
 
+	var code = "";
+
+	for(var i=0; i<=2; i++){
+		var character = String.fromCharCode(Math.floor(Math.random() * (48 - 57) + 57));
+		code += character;
+	}
+	// se genera el alert con el codígo aleatorio
+	swal("We have created a new code for you!", "Your code: LAB-" + code, "success").then(function(){
+		window.location.href="singup.html?code="+ code;
+	});
+};
 
 $(document).ready(function() {
     $('input#the-code').characterCounter();
     $('#the-code').keyup(randomCodeValidation);
+    $('#resend-code').click(randomCode);
   });

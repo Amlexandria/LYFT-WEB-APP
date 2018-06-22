@@ -31,26 +31,7 @@ main {
   margin-top: 2rem;
 }
 
-/*.dropdown-content li {
-    clear: both;
-    color: rgba(0,0,0,0.87);
-    cursor: pointer;
-    min-height: 50px;
-    line-height: 1.5rem;
-    width: 100%;
-    text-align: center;
-}
 
-.dropdown-content li>span {
-   font-size: 16px;
-   color: #26a69a;
-   display: block;
-   line-height: 22px;
-   padding: 14px 16px;
-}*/
-.select-dropdown li img {
-    height: 30px;
-    width: 40px;
-    margin: 10px 15px;
-    float: right;
+#resend-code {
+  margin-top: 2rem;
 }

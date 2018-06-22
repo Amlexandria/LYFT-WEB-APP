@@ -36,12 +36,12 @@ function randomCode () {
 		code += character;
 	}
 	// se genera el alert con el codígo aleatorio
-	swal("We have created a code for you!", "Your code: LAB-" + code, "success");
-
-
+	swal("We have created a code for you!", "Your code: LAB-" + code, "success").then(function(){
+		window.location.href="singup.html?code="+ code;
+	});
 	// se reemplaza el botón por defecto del alert por un enlace que redirecciona al singup.html
-	$('.swal-button').replaceWith("<a class='nuevo btn' href='singup.html'>ok</a>");
-	window.location.href="singup.html?code="+ code;
+	// $('.swal-button').replaceWith("<a class='nuevo btn' href='singup.html'>ok</a>");
+	
 
 	// $('swal-button').click(function(){
 	// 	var butonAlertCode = $('swal-button').attr('href', 'singup.html');
