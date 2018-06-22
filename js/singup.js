@@ -47,5 +47,7 @@ $(document).ready(function() {
 	$('#btn-next3').removeClass('disabled');
 	$('#btn-next3').click(weAreDoneAlert);
 
+
+
     })
   });
