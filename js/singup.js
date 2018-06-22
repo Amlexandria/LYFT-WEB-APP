@@ -31,7 +31,9 @@ function randomCode () {
 };
 
 function weAreDoneAlert () {
-	swal("We have finished", "you have successfully completed your registration!" , "success")
+	swal("We have finished", "you have successfully completed your registration!" , "success").then(function(){
+		window.location.href="index.html";
+	});
 }
 
 
