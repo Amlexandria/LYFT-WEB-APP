@@ -33,9 +33,11 @@ function randomCode () {
 		var character = String.fromCharCode(Math.floor(Math.random() * (48 - 57) + 57));
 		code += character;
 	}
-console.log(code);
-swal("HWe have created a code for you!", "Your code: LAB-" + code);
-}
+	// se genera el alert con el codígo aleatorio
+	swal("We have created a code for you!", "Your code: LAB-" + code, "success");
+};
+
+
 
 
 

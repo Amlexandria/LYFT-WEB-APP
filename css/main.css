@@ -94,3 +94,46 @@ hr {
     float: right;
 }
 
+/*SWET ALERT RANDOM CODE*/
+
+
+.swal-modal {
+    width: calc(80% - 40px);
+}
+
+.swal-title {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+.swal-modal {
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgb(233, 30, 99);
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.swal-icon--success:after, .swal-icon--success:before {
+    background: rgb(233, 30, 99);
+}
+
+.swal-icon--success__hide-corners {
+    background: rgb(233, 30, 99);
+}
+
+/*.swal-icon--success__line {
+    height: 5px;
+    background-color: #9BE5F3;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+}*/
+
+.swal-icon--success__line {
+    background-color: #9BE5F3;
+}
