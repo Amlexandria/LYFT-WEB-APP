@@ -34,4 +34,9 @@ $(document).ready(function() {
     $('input#the-code').characterCounter();
     $('#the-code').keyup(randomCodeValidation);
     $('#resend-code').click(randomCode);
+    $('.modal').modal();
+    $('.checkbox').click(function(){
+	$('#btn-next3').removeClass('disabled');
+
+    })
   });
