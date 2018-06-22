@@ -35,6 +35,13 @@ function randomCode () {
 	}
 	// se genera el alert con el codígo aleatorio
 	swal("We have created a code for you!", "Your code: LAB-" + code, "success");
+	
+	$('.swal-button').replaceWith("<a class='nuevo btn' href='singup.html'>ok</a>");
+
+	// $('swal-button').click(function(){
+	// 	var butonAlertCode = $('swal-button').attr('href', 'singup.html');
+	// console.log(butonAlertCode);
+	// });
 };
 
 
@@ -48,5 +55,7 @@ function randomCode () {
     $('select').formSelect();
     $('#phone-number').mousemove(digitCounter);
     $('#btn-next').click(randomCode);
+
+
 
   });
