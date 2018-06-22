@@ -6,7 +6,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/assets/materialize.min.css">
 	    <link rel="stylesheet" href="css/main.css">
-		<title></title>
+		<title>Lyft Web-app</title>
 	</head>
 	<body>
 		<main class="col s12">
@@ -26,7 +26,7 @@
 						<hr>	 
 					<!-- CHOOSE YOUR COUNTRY -->
 						<div class="row container-country">
-							<div class="input-field col s6 m6">
+							<div class="input-field offset-s1 col s10 m6">
 							    <select class="icons">
 							      <option value="" disabled selected>Country</option>
 							      <option value="" data-icon="assets/images/egipto.JPG">Egipto</option>
@@ -37,15 +37,26 @@
 							    </select>
 							    <label></label>
 				  			</div>
-						    <div class="col s6">
+						    <!-- <div class="col s6">
 						        <div class="input-field inline">
-						           <input id="phone_inline" type="email" class="validate">
-						           <label for="phone_inline">Phone Number</label>
+						           <input id="phone" type="email" class="validate">
+						           <label for="phone">Phone Number</label>
 						        </div>
-						    </div>
+						    </div> -->
+						    <div class="row">
+							    <form class="offset-s1 col s10">
+							      <div class="row">
+							        <div class="input-field col s12">
+							          <input id="phone-number" type="number"  data-length="10">
+							          <label for="phone-number">Phone Number</label>
+							          <span class="helper-text" data-error="wrong" data-success="right">Only numbers are accepted</span>
+							        </div>
+							      </div>
+							    </form>
+  							</div>
 				      	</div>
 				      	<p><strong>We'll send a text to verify your phone</strong></p>
-				      	<a class="offset-s1  col s10 btn disabled">Next</a>
+				      	<a id="btn-next" class="offset-s1  col s10 btn disabled">Next</a>
 				      	<div class="col s12 espacio"></div>
 				      	 <a href=""><i class="small material-icons left">keyboard_return</i></a>
 			     	 </div>
@@ -60,6 +71,7 @@
 		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		  crossorigin="anonymous">
 		</script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script src="js/assets/materialize.min.js"></script>
 	    <script src="js/app.js"></script>
 	</body>
