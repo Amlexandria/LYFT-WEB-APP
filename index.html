@@ -13,34 +13,48 @@
 			<div class="row">
 				<img class="pink-logo offset-s2 col s8 " src="assets/images/logo-pink.png">
 				<a class="log-in offset-s2 col s4 waves-effect waves-light btn-large"><strong>Log in</strong></a>
-				<a class="sing-up col s4 waves-effect waves-light btn-large"><strong>Sing up</strong></a>
+				<a class="sing-up col s4 waves-effect waves-light btn-large  waves-light modal-trigger" href="#modal1"><strong>Sing up</strong></a>
 			</div>
 		</main>
-		<section class="row form-country">
-			<h5>Sing Up</h5>
-			<p>Join now for free ride credit</p>
-			<hr>
-			 <a class='dropdown-trigger btn' href='#' data-target='dropdown1'><i class="material-icons right">arrow_drop_down</i>Country</a>
-			  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!"><img class="flag center" src="assets/images/egipto.JPG"></a></li>
-    <li><a href="#!"><img class="flag center" src="assets/images/china.JPG"></a></li>
-    <li><a href="#!"><img class="flag center" src="assets/images/korea.JPG"></a></li>
-    <li><a href="#!"><img class="flag center" src="assets/images/alemania.JPG"></a></li>
-    <li><a href="#!"><img class="flag center" src="assets/images/india.JPG"></a></li>
-  </ul>
-			 <div class="row">
-		        <div class="col s12">
-		          <div class="input-field inline">
-		            <input id="email_inline" type="email" class="validate">
-		            <label for="email_inline">Email</label>
-		          </div>
-		        </div>
-      		</div>
-			
+		<!-- MODAL SING UP -->
+		<section>
+			<div id="modal1" class="modal row center">
+			    <div class="modal-content">
+				      <div class="col s12 container-sing-up">
+						<h5><strong>Sing Up</strong></h5>
+						<p>Join now for free ride credit</p>
+						<hr>	 
+					<!-- CHOOSE YOUR COUNTRY -->
+						<div class="row container-country">
+							<div class="input-field col s6 m6">
+							    <select class="icons">
+							      <option value="" disabled selected>Country</option>
+							      <option value="" data-icon="assets/images/egipto.JPG">Egipto</option>
+							      <option value="" data-icon="assets/images/korea.JPG">Korea</option>
+							      <option value="" data-icon="assets/images/india.JPG">india</option>
+							      <option value="" data-icon="assets/images/alemania.JPG">alemania</option>
+							      <option value="" data-icon="assets/images/china.JPG">china</option>
+							    </select>
+							    <label></label>
+				  			</div>
+						    <div class="col s6">
+						        <div class="input-field inline">
+						           <input id="phone_inline" type="email" class="validate">
+						           <label for="phone_inline">Phone Number</label>
+						        </div>
+						    </div>
+				      	</div>
+				      	<p><strong>We'll send a text to verify your phone</strong></p>
+				      	<a class="offset-s1  col s10 btn disabled">Next</a>
+				      	<div class="col s12 espacio"></div>
+				      	 <a href=""><i class="small material-icons left">keyboard_return</i></a>
+			     	 </div>
+
+			     	 
+			    </div>
+  			</div>
 		</section>
-
-
+		
 		<script
 		  src="https://code.jquery.com/jquery-3.3.1.min.js"
 		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
